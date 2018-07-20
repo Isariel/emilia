@@ -1,0 +1,16 @@
+repositories {
+
+    /**
+     * Spigot and OSS Repo.
+     */
+    maven { url = 'https://hub.spigotmc.org/nexus/content/repositories/snapshots/' }
+    maven { url = 'https://oss.sonatype.org/content/repositories/snapshots' }
+}
+
+dependencies {
+
+    /**
+     * Spigot API
+     */
+    compile 'org.spigotmc:spigot-api:1.12.2-R0.1-SNAPSHOT'
+}

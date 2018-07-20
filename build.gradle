@@ -2,3 +2,37 @@ group 'de.d3adspace'
 version '1.0-SNAPSHOT'
 
 description 'Basic spigot server plugin offering environment control and tools for lifecycle processing and central core plugin putting all the things together.'
+
+/**
+ * Setup environment for all sub projects.
+ */
+subprojects {
+
+    /**
+     * Apply plugins to match java & maven architecture
+     */
+    apply plugin: 'maven'
+    apply plugin: 'java'
+
+    /**
+     * Setup language level 8.
+     */
+    sourceCompatibility = 1.8
+    targetCompatibility = 1.8
+
+    /**
+     * Configure repositories.
+     */
+    repositories {
+
+        /**
+         * Resolving local maven repository.
+         */
+        mavenLocal()
+
+        /**
+         * Maven central repository.
+         */
+        mavenCentral()
+    }
+}
