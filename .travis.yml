@@ -1,7 +1,7 @@
 ######################################
 ### Configure programming language ###
 ######################################
-language: kotlin
+language: java
 
 ##################################
 ### Make sure using Oracle JDK ###
